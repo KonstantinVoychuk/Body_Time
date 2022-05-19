@@ -1,0 +1,137 @@
+//====================================================================================================
+.footer {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 80px 15.5% 80px 8.3%;
+		@media (max-width: 1200px){
+			font-size: rem(14);
+			padding: 40px 0px 0px 10%;
+			flex-direction: column;
+		}
+		@media (max-width: 480px){
+			padding: 40px 0px 0px 5%;
+		}
+
+	}
+
+	.naviganion {
+		width: 512px;
+		@media (max-width: 1770px){
+			width: 220px;
+		}
+
+		&__site li{
+			padding: 16px 0px 0px 0px;
+			text-transform: uppercase;
+		}
+
+		&__social {
+			padding: 0;
+		}
+
+		&__social-icon {
+			padding: 56px 0px 0px 0px;
+		}
+
+		&__copyright {
+			line-height: 1.5;
+		}
+}
+.about {
+width: 376px;
+	@media (max-width: 1770px){
+		padding: 0px 20px 0px 0px;
+	}
+	@media (max-width: 1200px){
+		padding: 40px 0px 0px 0px;
+	}
+	@media (max-width: 997px){
+		padding: 40px 0px 0px 0px;
+	}
+	@media (max-width: 767.98px){
+		width: 320px;
+		padding: 40px 0px 0px 0px;
+	}
+	@media (max-width: 480px){
+		width: 294px;
+	}
+
+
+		&__title {
+			
+		}
+
+		&__text {
+			padding: 16px 0px 0px 0px;
+			line-height: 1.5;
+		}
+		&__text_pd {
+			padding: 8px 0px 0px 0px;
+			line-height: 1.5;
+		}
+}
+.news {
+width: 376px;
+	@media (max-width: 1200px){
+		padding: 40px 0px 0px 0px;
+	}
+	@media (max-width: 787.98px){
+		padding: 40px 0px 0px 0px;
+	}
+	@media (max-width: 480px){
+		width: 294px;
+	}
+
+		&__title {
+			text-transform: uppercase;
+		}
+
+		&__text {
+			padding: 16px 0px 0px 0px;
+			line-height: 1.5;
+		}
+
+		&__privat span{
+			text-decoration: underline;
+		}
+
+		&__privat-link {
+		}
+}
+.news-mail {
+	min-width: 376px;
+
+		&__form {
+		}
+
+		&__input {
+			font-size: 14px;
+			padding: 16px 0px 16px 16px;
+			width: 272px;
+			background: rgb(247, 247, 247);
+			color: #AEACAA;
+			margin: 32px 0px 64px 0px;
+			@media (max-width: 787.98px){
+				width: 200px;
+			}
+			@media (max-width: 480px){
+				padding: 12px 0px 12px 12px;
+			}
+		}
+}
+.button {
+	color: #fff;
+	background: #74B900;
+	padding: 16px 36px 16px 36px;
+	@media (max-width: 480px){
+		padding: 12px 24px 12px 24px;
+	}
+}
+
+
+	
+}
+
+//====================================================================================================
