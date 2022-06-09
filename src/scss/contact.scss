@@ -1,0 +1,56 @@
+//====================================================================================================
+.wrapper {
+}
+.page-contact {
+	position: relative;
+	max-width: 1920px;
+	padding: 144px 7% 0 7%;
+	@media (max-width: 767.98px){
+		padding-top: 96px;
+		}
+	@media (max-width: 480px){
+		padding-left: 3%;
+		padding-right: 3%;
+		}
+}
+
+.contact-title {
+	font-size: rem(48);
+	padding: 72px 0 0 0px;
+	@include adaptiveValue("font-size",48,24,1600,320,1);
+	@media (max-width: 480px){
+		padding-left: 10px;
+		}
+}
+
+
+.block-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding-top: 58px;
+	@media (max-width: 480px){
+		padding-left: 10px;
+		}
+
+	&__item {
+	}
+}
+
+
+
+.block-map {
+	display: block;
+	position: relative;
+	height: 550px;
+	margin-top: 80px;
+
+}
+.frame-map {
+	position: absolute;
+	width: 100%;
+}
+
+
+
+//====================================================================================================

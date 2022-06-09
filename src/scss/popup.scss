@@ -1,0 +1,73 @@
+//====================================================================================================
+.popup {
+
+	&__wrapper {
+		width: 90%;
+		height: 20%;
+		margin: 0 auto;
+		@media (max-width: 480px){
+		font-size: rem(14);
+		}
+	}
+
+	&__content {
+		max-width: 512px;
+		min-height: 528px;
+		padding: 0px 0px 0px 3%;
+		border-radius: 12px;
+	}
+
+	&__text {
+		font-size: rem(32);
+		padding: 72px 0px 0px 50px;
+		@media (max-width: 480px){
+			font-size: rem(20);
+			}
+	}
+
+	&__send {
+		border: 2px solid $GrinColor;
+		color: $GrinColor;
+		padding: 12px 24px;
+		border-radius: 5px;
+		margin: 50px 0px 0px 100px;
+		@media (max-width: 480px){
+			font-size: rem(12);
+			padding: 8px 12px;
+			margin: 50px 0 0px 25%;
+			}
+	}
+
+	&__close {
+	margin: 0px 0 0 105%;
+		border-radius: 5px;
+		color: #fff;
+		@media (max-width: 680px){
+			margin: 0px 0 0 90%;
+			padding: 8px 12px;
+			color: rgb(48, 48, 48);
+			}
+	}
+}
+.name {
+	width: 90%;
+	margin: 48px 0px 24px 0px;
+	padding: 12px 50px 12px 12px;	
+}
+
+.phone {
+	width: 90%;
+	padding: 12px 50px 12px 12px;
+}
+
+.checkbox {
+margin: 24px 16px 40px 0px;
+}
+
+.checkbox__text {
+	font-size: rem(12);
+line-height: 1.3;
+}
+
+
+//====================================================================================================

@@ -39,7 +39,7 @@ flsFunctions.menuInit();
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -60,7 +60,7 @@ flsFunctions.menuInit();
 Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -76,7 +76,7 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
@@ -89,7 +89,7 @@ import * as flsForms from "./files/forms/forms.js";
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* (В работе) Модуль работы с масками.*/
 /*

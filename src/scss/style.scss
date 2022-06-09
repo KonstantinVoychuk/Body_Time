@@ -124,12 +124,33 @@ body {
 	}
 }
 
+
+// Стили "Навигация - хлебные крошки" ------------------------------------------------------------------------------
+.breadcrumb {
+}
+.breadcrumb ul {
+	display: flex;
+}	
+.breadcrumb li::before {
+	content:'\2014';
+	padding: 0px 7px;
+}	
+.br-color {
+	color: $GrinColor;
+}
+.breadcrumb li:first-child::before {
+	content: "";
+}
+
+
+
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";
 
 // Подключение стилей общих элементов проекта
 @import "common";
+@import "popup";
 
 // Подключение стилей отдельных блоков
 @import "header";
@@ -137,3 +158,6 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "servis";
+@import "price";
+@import "contact";

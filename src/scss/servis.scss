@@ -1,0 +1,231 @@
+//====================================================================================================
+.wrapper {
+}
+.page {
+}
+.content-page {
+	padding: 144px 7% 0px 7%;
+}
+
+// "Заголовок" ------------------------------------------------------------------------------
+
+.title {
+	font-size: rem(48);
+	padding: 112px 0px 0px 0px;
+	text-align: center;
+	@include adaptiveValue("font-size",48,28,1200,380,1);
+}
+
+// "Селекторы" ------------------------------------------------------------------------------
+
+.select-search-block {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 80px 50px 0 0;
+	@media (max-width: 1200px){
+		justify-content: flex-start;
+		gap: 18px;
+	}
+}
+
+.voronka {
+	display: none;
+	@media (max-width: 1200px){
+		display: block;
+	}
+	&__icon {
+	}
+}
+
+
+.select-group {
+	display: flex;
+	gap: 1%;
+	font-size: rem(14);
+	align-items: center;
+	@media (max-width: 1200px){
+		display: none;
+	}
+}
+.select__options{
+	//margin: -30px 0 0 50px;
+}
+
+.sel-gr {
+
+		&__item1 {
+			min-width: 192px;
+		}
+
+		&__item2 {
+			min-width: 192px;
+		}
+
+		&__item3 {
+			min-width: 144px;
+		}
+
+		&__item4 {
+			min-width: 152px;
+		}
+}
+
+
+
+.form-search {
+	display: flex;
+	align-items: center;
+}
+
+.search-input {
+	font-size: rem(16);
+	padding: 9px 0;
+	width: 400px;
+	border: 1px solid rgb(242, 242, 242);
+	@media (max-width: 1440px){
+		width: 200px;
+	}
+	@media (max-width: 480px){
+		width: 180px;
+		padding: 7px 0;
+	}
+
+}
+.search-btn {
+	padding: 6px 10px;
+	background: rgb(247, 247, 247);
+}
+.search-btn img {
+	@media (max-width: 480px){
+		width: 24px;
+		height: 24px;
+	}
+}
+
+//Фильтр выбора услуг "Воронка"--------------------------------------------------------
+@media (max-width: 1200px){
+	.select-group._active {
+		position: absolute;
+		top: 80px;
+		left: 35px;
+		display: flex;
+		flex-direction: column;
+		gap: 1%;
+		font-size: rem(11);
+		align-items: flex-start;
+		z-index: 5;
+	}
+
+	.select__options{
+		margin: -35px 0 0 143px;
+	}
+	
+	.sel-gr {
+
+			&__item1 {
+				min-width: 141px;
+				max-width: 141px;
+			}
+	
+			&__item2 {
+				min-width: 141px;
+				max-width: 141px;
+			}
+	
+			&__item3 {
+				min-width: 141px;
+				max-width: 141px;
+			}
+	
+			&__item4 {
+				min-width: 141px;
+				max-width: 141px;
+			}
+	}
+	
+}
+
+// Карточки услуг -----------------------------------------------------------
+
+.servis-body {
+
+	position: relative;
+	max-width: 1594px;
+	padding: 48px 0 176px 0;
+	@media (max-width: 910px){
+		padding: 48px 0 48px 0;
+	}
+}
+.servis-list {
+	display: grid;
+	grid-template: repeat(9, 1fr) / repeat(2, 1fr);
+	gap: 32px;
+
+	@media (max-width: 910px){
+		grid-template: repeat(18, 1fr) / repeat(1, 1fr);
+	}
+
+		&__card {
+		}
+}
+.list-card {
+	max-width: 784px;
+	margin: auto;
+	@media (max-width: 767.98px){
+		margin: 0 -7% 0 -7%;
+	}
+
+
+		&__picture {
+			position: relative;
+//			padding: 0 0 58.1% 0;
+
+		}
+		&__picture img {
+			position: relative;
+			max-width: 100%;
+		}
+
+		&__text {
+			background: #F9F9F9;
+			max-width: 784px;
+			padding: 48px 0 0px 48px;
+			min-height: 280px;
+			@media (max-width: 910px){
+				min-height: 200px;
+				padding: 36px 0 0px 16px;
+			}
+		
+		}
+
+		&__text-title {
+			font-size: rem(32);
+			@include adaptiveValue("font-size",32,18,1920,996,1);
+			line-height: 1.3;
+		}
+
+		&__text-price {
+			margin: 8px 0 0px 0px;
+			&_text p {
+				padding: 16px 0 0px 0px;
+				font-size: rem(20);
+				@include adaptiveValue("font-size",20,14,1920,996,1);
+			}
+
+			&_link span {
+				padding: 16px 0 0px 0px;
+				font-size: rem(20);
+				text-decoration: underline;
+
+			}
+		}
+}
+
+
+
+
+
+
+//====================================================================================================

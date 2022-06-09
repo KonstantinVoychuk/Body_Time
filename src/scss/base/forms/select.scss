@@ -5,6 +5,7 @@
 	// .select__body
 	&__body {
 		position: relative;
+
 	}
 	// .select__title
 	&__title {
@@ -20,14 +21,17 @@
 	&__value {
 		display: flex;
 		align-items: center;
-		height: rem(30);
+		height: rem(40);
 		padding: 0 rem(15);
 		gap: rem(10);
 		> * {
 			flex: 1 1 auto;
 		}
 		&:after {
-			content: "";
+			content: "\25BE";
+			@media (max-width: 1200px){ 
+				content: "\203A"; /* замена треугольника "вниз" на стелку "в право" */
+			}
 			align-self: stretch;
 			flex: 0 0 10px;
 			transition: all 0.3s ease 0s;
@@ -56,9 +60,9 @@
 	}
 	// .select__options
 	&__options {
-		color: #000;
+		color: rgb(51, 51, 51);
 		position: absolute;
-		top: 29px;
+		top: 35px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;
